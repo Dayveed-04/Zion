@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Button from "../components/Buton";
 import Card from "../components/Card";
 import HomeHero from '../assets/images/Home-Hero.svg';
+import Mandate from '../assets/images/Mandate.svg';
+import Vision from '../assets/images/Vision.svg';
 
 const Home = () =>{
     return(
@@ -36,7 +38,7 @@ const Home = () =>{
       paragraph={[
         "To take the gospel to all four corners of the earth"
       ]}
-      imageUrl="/src/assets/images/Mandate.svg"
+      imageUrl={Mandate}
       imagePosition="right"
       textAlign="center"
       bgColor="bg-[#DB241E]"
@@ -48,7 +50,7 @@ const Home = () =>{
       paragraph={[
         "To gather people I (God) will bless and prepare for heaven"
       ]}
-      imageUrl="/src/assets/images/Vision.svg"
+      imageUrl={Vision}
       imagePosition="left"
       textAlign="center"
       bgColor="bg-[#EDCD15]"

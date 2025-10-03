@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import MinisterCard from '../components/MinisterCard';
+import MinisterHero from '../assets/images/Ministers.svg';
 
 const Ministers = () => {
     const navigate = useNavigate();
@@ -19,7 +20,7 @@ const Ministers = () => {
             <div className="gap-9  mt-8 ">
              <section className=" relative w-full  min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-start">
              <img
-             src="/src/assets/images/Ministers.svg"
+             src={MinisterHero}
              alt="Hero Background"
              className="absolute inset-0 w-full h-full object-cover object-top md:object-center "
               />
@@ -27,7 +28,7 @@ const Ministers = () => {
             </div>
           <div className="flex flex-col gap-9 mt-10 max-w-2xl mx-auto px-4 md:px-8 ">
          <MinisterCard
-          imageUrl="/src/assets/images/Ministers.svg"
+          imageUrl={MinisterHero}
           title="Rev. Sarah Johnson"
           description="Senior Pastor with 15 years of ministry experience, dedicated to spreading God's word and building strong communities of faith."
           bgColor="bg-[#F8F9FA]"
@@ -36,7 +37,7 @@ const Ministers = () => {
           isFirst={true}
         />
           <MinisterCard
-            imageUrl="/src/assets/images/Ministers.svg"
+            imageUrl={MinisterHero}
             title="Pastor Michael Chen"
             description="Youth Minister passionate about mentoring the next generation."
             bgColor="bg-[#F8F9FA]"
@@ -44,7 +45,7 @@ const Ministers = () => {
             descriptionColor="text-black"
           />
            <MinisterCard
-            imageUrl="/src/assets/images/Ministers.svg"
+            imageUrl={MinisterHero}
             title="Pastor Michael Chen"
             description="Youth Minister passionate about mentoring the next generation."
             bgColor="bg-[#F8F9FA]"
@@ -52,7 +53,7 @@ const Ministers = () => {
             descriptionColor="text-black"
           />
            <MinisterCard
-            imageUrl="/src/assets/images/Ministers.svg"
+            imageUrl={MinisterHero}
             title="Pastor Michael Chen"
             description="Youth Minister passionate about mentoring the next generation."
             bgColor="bg-[#F8F9FA]"
@@ -60,7 +61,7 @@ const Ministers = () => {
             descriptionColor="text-black"
           />
            <MinisterCard
-            imageUrl="/src/assets/images/Ministers.svg"
+            imageUrl={MinisterHero}
             title="Pastor Michael Chen"
             description="Youth Minister passionate about mentoring the next generation."
             bgColor="bg-[#F8F9FA]"
@@ -68,7 +69,7 @@ const Ministers = () => {
             descriptionColor="text-black"
           />
            <MinisterCard
-            imageUrl="/src/assets/images/Ministers.svg"
+            imageUrl={MinisterHero}
             title="Pastor Michael Chen"
             description="Youth Minister passionate about mentoring the next generation."
             bgColor="bg-[#F8F9FA]"

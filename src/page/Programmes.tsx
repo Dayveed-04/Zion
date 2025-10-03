@@ -3,6 +3,7 @@ import WeeklyCard from "../components/weeklyCard";
 import { weeklySchedules } from "../data/WeeklyData";
 import DepartmentCard from "../components/DepartmentCard";
 import { departments } from "../data/DepartmentData";
+import ProgrammesHero from '../assets/images/Program-Hero.svg';
 
 
 const Programmes = () =>{
@@ -12,7 +13,7 @@ const Programmes = () =>{
         <div className="gap-9 flex flex-col mt-8 ">
              <section className=" relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-start ">
                 <img
-                 src="/src/assets/images/Program-Hero.svg"
+                 src={ProgrammesHero}
                  alt="Hero Background"
                  className="absolute inset-0 w-full h-full object-cover object-top md:object-center "
                  />

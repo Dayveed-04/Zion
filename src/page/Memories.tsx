@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MemoriesHero from '../assets/images/Memories.svg';
 
 
 
@@ -8,7 +9,7 @@ export const Memories = () => {
         <div className="gap-9 flex flex-col mt-8 ">
              <section className=" relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-start ">
                 <img
-                 src="/src/assets/images/Memories.svg"
+                 src={MemoriesHero}
                  alt="Hero Background"
                  className="absolute inset-0 w-full h-full object-cover object-top md:object-center "
                  />
