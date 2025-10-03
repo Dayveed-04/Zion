@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import Button from "../components/Buton";
 import Card from "../components/Card";
-
+import HomeHero from '../assets/images/Home-Hero.svg';
 
 const Home = () =>{
     return(
       <div className="gap-9 flex flex-col mt-8 ">
        <section className=" relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-start ">
         <img
-        src="/src/assets/images/Home-Hero.svg"
+        src={HomeHero}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
         />
