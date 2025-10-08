@@ -60,8 +60,6 @@ const Programmes = () =>{
                         />
                     </div>
                 )}
-                </div>
-                <div className=" px-4 md:px-8">
                 {activeTab === "department" && (
                     <div className="space-y-8">
                          <DepartmentCard

@@ -24,7 +24,7 @@ const MinisterCard: React.FC<MinsterCardProps> = ({
       <img 
         src={imageUrl} 
         alt={title}
-        className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover mb-4"
+        className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover mb-4 border-2 border-[#DB241E]"
       />
       <h3 className={`text-sm md:text-3xl font-bold mb-2 md:mb-4  ${titleColor}`}>{title}</h3>
       <p className={`${isFirst ? 'text-lg font-medium' : 'text-base'} text-xs md:text-xl leading-relaxed ${descriptionColor}`}>

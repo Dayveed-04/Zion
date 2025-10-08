@@ -33,7 +33,7 @@ const DepartmentCard = ({
   };
 
   return (
-    <div className="max-w-3xl mx-auto space-y-4 p-6">
+    <div className="max-w-3xl mx-auto space-y-4 ">
       {departments.map((dept) => (
         <div
           key={dept.id}

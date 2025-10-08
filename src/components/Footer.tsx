@@ -19,7 +19,7 @@ const Footer = () => {
 
       
           <div className="col-span-2 md:col-span-1 flex justify-center order-1 md:order-2">
-            <div className="scale-75 md:scale-100">
+            <div className="scale-90 sm:scale-100">
               <Button
                 text='Contact Us'
                 bgColor='bg-[#EDCD15]'
