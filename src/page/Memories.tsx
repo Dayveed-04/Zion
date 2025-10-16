@@ -19,7 +19,7 @@ export const Memories = () => {
                       Memories </h1>
                    </div>
              </section>
-               <div className="bg-white top-20 z-40">
+               <div className="top-20 z-40">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-center gap-8">
                         <button

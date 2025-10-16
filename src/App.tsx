@@ -8,6 +8,7 @@ import Offerings  from './page/Offerings'
 import Memories from './page/Memories'
 import Ministers from './page/Ministers'
 import ScrollToTop from './components/ScrollTop'
+import Background from './assets/images/background.jpg'
 
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
   return (
     <>
     <ScrollToTop/>
+     <div
+        className="min-h-screen flex flex-col bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url(${Background})` }}
+      >
     <Routes>
        <Route path="/ministers" element={<Ministers/>} />
 
@@ -22,6 +27,7 @@ function App() {
        <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1 pt-12">
+
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/programmes" element={<Programmes/>} />
@@ -33,6 +39,7 @@ function App() {
         </div>  
          } />   
     </Routes>
+    </div>
     </>
   )
 }
