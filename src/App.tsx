@@ -3,12 +3,13 @@ import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './page/Home'
-import Programmes from './page/Programmes'
-import Offerings  from './page/Offerings'
-import Memories from './page/Memories'
 import Ministers from './page/Ministers'
 import ScrollToTop from './components/ScrollTop'
-import Background from './assets/images/background.jpg'
+import Giving from './page/Giving'
+import Events from './page/Events'
+import About from './page/About'
+import Visit from './page/Visit'
+import MinistersList from './page/MinisterList'
 
 
 function App() {
@@ -16,13 +17,7 @@ function App() {
   return (
     <>
     <ScrollToTop/>
-     <div
-        className="min-h-screen flex flex-col bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url(${Background})` }}
-      >
     <Routes>
-       <Route path="/ministers" element={<Ministers/>} />
-
        <Route path="/*" element={
        <div className="min-h-screen flex flex-col">
           <Header />
@@ -30,16 +25,18 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Home/>} />
-              <Route path="/programmes" element={<Programmes/>} />
-              <Route path="/memories" element={<Memories/>}/>
-              <Route path="/offerings" element={<Offerings/>} />
+              <Route path="/events" element={<Events/>} />
+              <Route path="/about" element={<About/>}/>
+              <Route path="/ministers" element={<Ministers/>} />
+                 <Route path="/ministers/all" element={<MinistersList/>} />
+              <Route path="/giving" element={<Giving/>} />
+              <Route path="/visit" element={<Visit/>} />
             </Routes>
           </main>
           <Footer/>
         </div>  
          } />   
     </Routes>
-    </div>
     </>
   )
 }

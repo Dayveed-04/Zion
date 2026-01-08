@@ -1,29 +1,48 @@
-import { Link } from "react-router-dom";
 import Button from "../components/Buton";
-import Card from "../components/Card";
 import HomeHero from '../assets/images/Home-Hero.svg';
-import Mandate from '../assets/images/Mandate.svg';
-import Vision from '../assets/images/Vision.svg';
+import InfoCard from "../components/InfoCard";
+import LoveIcon from '../assets/images/LoveIcon.svg';
+import CommunityIcon from '../assets/images/CommunityIcon.svg';
+import GlobeIcon from '../assets/images/GlobeIcon.svg';
+import EventIcon from '../assets/images/EventIcon.svg';
+import Event from "../components/Event";
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () =>{
+  const navigate = useNavigate();
     return(
       <div className="gap-9 flex flex-col mt-8 ">
-       <section className=" relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-start ">
+       <section className=" relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-center overflow-hidden  ">
         <img
         src={HomeHero}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
         />
-    <div className="absolute inset-0 bg-black/50 z-0"></div>
-      <div className="relative z-10 px-1 sm:px-2 md:px-4 lg:px-6 w-full ">
-        <h1 className="text-xl sm:text-lg md:text-3xl lg:text-4xl font-bold text-white mb-3 leading-tight">
-          Come and join <br/> Our Family
+    <div className="absolute inset-0 bg-[#D92521]/30 z-0"></div>
+      <div className="relative z-10 px-1 sm:px-2 md:px-4 lg:px-6 w-full flex items-center flex-col">
+        <h1 className="text-xl sm:text-lg md:text-3xl lg:text-4xl font-light font-sans text-white mb-3 leading-tight">
+           Welcome to Zion
         </h1>
-        <div className="flex flex-col sm:flex-row gap-4 items-start">
-          <div className=" scale-50 sm:scale-100 origin-left">
-             <Button
-           text='Our Programmes'
-            bgColor='bg-[#DB241E]'
+        <p className="text-md sm:text-sm md:text-xl lg:text-xl font-light font-sans text-white ">Zion the city of the lord ministries inc.</p>
+        <p className="text-md sm:text-sm md:text-xl lg:text-xl font-light font-sans text-white">Come and join our family </p>
+        <div className="flex flex-row sm:flex-row gap-4 items-start mt-3 ">
+          <div className="flex gap-4 scale-50 sm:scale-100 origin-left font-sans">
+            <Button
+              text='View Events'
+              bgColor='bg-black'
+              fontFamily="font-sans"
+              fontWeight="font-light"
+              borderRadius="rounded-xl"
+              onClick={()=>navigate('/events')}
+           />
+            <Button
+              text='Plan Your visit'
+              bgColor='bg-opacity-20 bg-black'
+              fontFamily="font-sans"
+              fontWeight="font-light"
+              borderRadius="rounded-xl"
+              onClick={()=>navigate('/visit')}
            />
            </div>
         </div>
@@ -32,42 +51,80 @@ const Home = () =>{
       <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/30 rounded-full blur-xl"></div>
     </section>
-    <div className="min-h-screen  space-y-8 px-4 md:px-8">
-    <Card
-      header="Mandate"
-      paragraph={[
-        "To take the gospel to all four corners of the earth"
-      ]}
-      imageUrl={Mandate}
-      imagePosition="right"
-      textAlign="center"
-      bgColor="bg-[#DB241E]"
-      textColor="text-white"
-      headerColor="text-white"
-    />
-    <Card 
-     header="Our Vision"
-      paragraph={[
-        "To gather people I (God) will bless and prepare for heaven"
-      ]}
-      imageUrl={Vision}
-      imagePosition="left"
-      textAlign="center"
-      bgColor="bg-[#EDCD15]"
-      textColor="text-white"
-      headerColor="text-white"
-    />
-         <div className="flex justify-center py-8">
-            <div className="scale-90 sm:scale-100">
-               <Link to="/ministers">
-              <Button
-                text='Our Ministers'
-                bgColor='bg-[#EDCD15]'
-              />
-              </Link>
-            </div>
+    
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <InfoCard
+            iconUrl={LoveIcon}
+            title="Our Mission"
+            description="Learn about our calling and purpose in serving the community"
+          />
+          <InfoCard
+            iconUrl={EventIcon}
+            title="Events"
+            description="Learn about our calling and purpose in serving the community"
+          />
+          <InfoCard
+            iconUrl={CommunityIcon}
+            title="Leadership"
+            description="Learn about our calling and purpose in serving the community"
+          />
+          <InfoCard
+            iconUrl={GlobeIcon}
+            title="Visit Us"
+            description="Learn about our calling and purpose in serving the community"
+          />
+        </div>
+      </section>
+      <section className="bg-red-100 py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+            Upcoming Events
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <Event
+              frequency="Every Tuesday"
+              title="DOZ Weekly Prayer"
+              time="11:30 PM - 12:30 AM"
+            />
+            <Event
+              frequency="2nd Friday Monthly"
+              title="DOZ Vigil"
+              time="11:30 PM - 12:30 AM"
+            />
+            <Event
+              frequency="3rd Sunday Monthly"
+              title="Praying Mothers"
+              time="11:30 PM - 12:30 AM"
+            />
           </div>
-    </div>
+
+          <div className="flex justify-center">
+            <Button
+              text='View Full Calendar'
+              bgColor='bg-[#D92521]'
+              fontFamily="font-sans"
+              fontWeight="font-light"
+              borderRadius="rounded-xl"
+              onClick={()=>navigate('/events')}
+           />
+          </div>
+        </div>
+      </section>
+      <section className="flex items-center justify-center flex-col mb-16 px-4 text-center">
+          <h2 className="text-xl font-bold mb-4">Join Our Community</h2>
+          <p className="mb-4">We invite you to be part of our growing family. Experience the love,</p>
+          <p className="mb-6">fellowship,and spiritual growth at Zion City of the Lord.</p>
+            <Button
+              text='Plan Your Visit'
+              bgColor='bg-[#D92521]'
+              fontFamily="font-sans"
+              fontWeight="font-light"
+              borderRadius="rounded-xl"
+              onClick={()=>navigate('/visit')}
+           />
+      </section>
     </div>
    
     );

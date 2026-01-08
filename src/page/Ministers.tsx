@@ -1,87 +1,63 @@
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import MinisterCard from '../components/MinisterCard';
-import MinisterHero from '../assets/images/Ministers.svg';
+import Button from '../components/Buton';
+import { leadersData } from '../data/MinisterData';
 
 const Ministers = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [apostle] = leadersData.filter(m => m.role === 'apostle');
+  const pastors = leadersData.filter(m => m.role === 'pastor');
 
-    return (
-        <div className="gap-9 flex flex-col mt-8">
-            <div className="absolute top-4 left-4 md:top-2 md:left-8 z-20">
-            <button 
-                onClick={() => navigate('/')}
-                className="text-[#DB241E] hover:text-[#c01f1a] t bg-white/80 rounded-full p-2"
-            >
-                <ArrowLeft size={30} />
-            </button>
-            </div>
-            
-            <div className="gap-9  mt-8 ">
-             <section className=" relative w-full  min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-start">
-             <img
-             src={MinisterHero}
-             alt="Hero Background"
-             className="absolute inset-0 w-full h-full object-cover object-top md:object-center "
+  return (
+    <div className="min-h-screen bg-white">
+      <section className="max-w-4xl mx-auto px-4 py-12 text-center mb-16">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Our Ministers
+        </h1>
+        <p className="text-gray-600">
+          Meet the dedicated servants leading Zion the City of the Lord Ministries
+        </p>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-4 mb-12">
+        <div className="flex flex-col items-center space-y-12">
+          <div className="flex flex-col items-center">
+            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#DB241E] mb-4">
+              <img
+                src={apostle.imageUrl}
+                alt={apostle.name}
+                className="w-full h-full object-cover"
               />
-              </section>
             </div>
-          <div className="flex flex-col gap-9 mt-10 max-w-2xl mx-auto px-4 md:px-8 ">
-         <MinisterCard
-          imageUrl={MinisterHero}
-          title="Rev. Sarah Johnson"
-          description="Senior Pastor with 15 years of ministry experience, dedicated to spreading God's word and building strong communities of faith."
-          bgColor="bg-[#F8F9FA]"
-          titleColor="text-black"
-          descriptionColor="text-black"
-          isFirst={true}
-        />
-          <MinisterCard
-            imageUrl={MinisterHero}
-            title="Pastor Michael Chen"
-            description="Youth Minister passionate about mentoring the next generation."
-            bgColor="bg-[#F8F9FA]"
-            titleColor="text-black"
-            descriptionColor="text-black"
-          />
-           <MinisterCard
-            imageUrl={MinisterHero}
-            title="Pastor Michael Chen"
-            description="Youth Minister passionate about mentoring the next generation."
-            bgColor="bg-[#F8F9FA]"
-            titleColor="text-black"
-            descriptionColor="text-black"
-          />
-           <MinisterCard
-            imageUrl={MinisterHero}
-            title="Pastor Michael Chen"
-            description="Youth Minister passionate about mentoring the next generation."
-            bgColor="bg-[#F8F9FA]"
-            titleColor="text-black"
-            descriptionColor="text-black"
-          />
-           <MinisterCard
-            imageUrl={MinisterHero}
-            title="Pastor Michael Chen"
-            description="Youth Minister passionate about mentoring the next generation."
-            bgColor="bg-[#F8F9FA]"
-            titleColor="text-black"
-            descriptionColor="text-black"
-          />
-           <MinisterCard
-            imageUrl={MinisterHero}
-            title="Pastor Michael Chen"
-            description="Youth Minister passionate about mentoring the next generation."
-            bgColor="bg-[#F8F9FA]"
-            titleColor="text-black"
-            descriptionColor="text-black"
-          />
-          
-          
-         
+            <p className="text-sm text-gray-600 mb-1">{apostle.title}</p>
+            <h3 className="text-lg font-bold text-gray-900">{apostle.name}</h3>
+          </div>
+
+          <div className="grid grid-cols-2 gap-16">
+            {pastors.map((pastor) => (
+              <div key={pastor.id} className="flex flex-col items-center">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#DB241E] mb-4">
+                  <img
+                    src={pastor.imageUrl}
+                    alt={pastor.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-base font-semibold text-gray-900 text-center">
+                  {pastor.name}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    );
-}
+      </section>
+
+      <section className="flex justify-center pb-32">
+        <div onClick={() => navigate('/ministers/all')}>
+          <Button text="VIEW LIST OF MINISTERS" bgColor="bg-[#DB241E]" />
+        </div>
+      </section>
+    </div>
+  );
+};
 
 export default Ministers;
