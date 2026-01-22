@@ -13,11 +13,11 @@ const Home = () =>{
   const navigate = useNavigate();
     return(
       <div className="gap-9 flex flex-col mt-8 ">
-       <section className="relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-center overflow-hidden">
+       <section className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen flex items-center justify-center overflow-hidden">
         <img
         src={HomeHero}
         alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
+        className="absolute inset-0 w-full h-full object-cover object-cover"
         />
     <div className="absolute inset-0 bg-[#D92521]/30 z-0"></div>
       <div className="relative z-10 px-2 sm:px-4 md:px-6 lg:px-8 w-full flex items-center flex-col">
@@ -52,6 +52,7 @@ const Home = () =>{
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/30 rounded-full blur-xl"></div>
     </section>
     
+
       <section className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <InfoCard
