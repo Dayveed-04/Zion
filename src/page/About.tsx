@@ -11,20 +11,20 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-white">
       <section className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h1>
-        <p className="text-gray-600 leading-relaxed">
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
           Discover our journey, mission, and the divine calling that guides Zion the 
         </p>
-        <p className="text-gray-600 leading-relaxed">
+        <p className="text-sm md:text-base text-gray-600 leading-relaxed">
             City of the Lord Ministries.
         </p>
       </section>
 
       <section className="bg-red-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Our Journey</h2>
+          <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-6">Our Journey</h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
-            <p>
+            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                Zion the City of the Lord Ministries Inc. was founded by our late father,Apostle Alexander Oyewole Bangbola, and commenced service <br/>
                 on May 2, 1999 at his living room at 33A Cooper Road, Ikoyi Lagos.
            </p>
@@ -39,9 +39,9 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-10">Our Mission</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <section className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+        <h2 className="text-xl md:text-3xl font-bold text-gray-900 text-center mb-10">Our Mission</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <InfoCard
             iconUrl={LoveIcon}
             title="Love and Fellowship"

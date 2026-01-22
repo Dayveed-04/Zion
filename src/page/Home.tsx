@@ -13,21 +13,21 @@ const Home = () =>{
   const navigate = useNavigate();
     return(
       <div className="gap-9 flex flex-col mt-8 ">
-       <section className=" relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-center overflow-hidden  ">
+       <section className="relative w-full min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-center overflow-hidden">
         <img
         src={HomeHero}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
         />
     <div className="absolute inset-0 bg-[#D92521]/30 z-0"></div>
-      <div className="relative z-10 px-1 sm:px-2 md:px-4 lg:px-6 w-full flex items-center flex-col">
-        <h1 className="text-xl sm:text-lg md:text-3xl lg:text-4xl font-light font-sans text-white mb-3 leading-tight">
+      <div className="relative z-10 px-2 sm:px-4 md:px-6 lg:px-8 w-full flex items-center flex-col">
+        <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-light font-sans text-white mb-3 leading-tight">
            Welcome to Zion
         </h1>
-        <p className="text-md sm:text-sm md:text-xl lg:text-xl font-light font-sans text-white ">Zion the city of the lord ministries inc.</p>
-        <p className="text-md sm:text-sm md:text-xl lg:text-xl font-light font-sans text-white">Come and join our family </p>
+        <p className="text-sm sm:text-base md:text-xl lg:text-xl font-light font-sans text-white">Zion the city of the lord ministries inc.</p>
+        <p className="text-sm sm:text-base md:text-xl lg:text-xl font-light font-sans text-white">Come and join our family </p>
         <div className="flex flex-row sm:flex-row gap-4 items-start mt-3 ">
-          <div className="flex gap-4 scale-50 sm:scale-100 origin-left font-sans">
+          <div className="flex gap-4  origin-left font-sans">
             <Button
               text='View Events'
               bgColor='bg-black'
@@ -82,7 +82,7 @@ const Home = () =>{
             Upcoming Events
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <Event
               frequency="Every Tuesday"
               title="DOZ Weekly Prayer"
@@ -113,9 +113,9 @@ const Home = () =>{
         </div>
       </section>
       <section className="flex items-center justify-center flex-col mb-16 px-4 text-center">
-          <h2 className="text-xl font-bold mb-4">Join Our Community</h2>
-          <p className="mb-4">We invite you to be part of our growing family. Experience the love,</p>
-          <p className="mb-6">fellowship,and spiritual growth at Zion City of the Lord.</p>
+          <h2 className="text-lg sm:text-xl font-bold mb-4">Join Our Community</h2>
+          <p className="mb-4 text-sm sm:text-base md:text-xl lg:text-xl">We invite you to be part of our growing family. Experience the love,</p>
+          <p className="mb-6 text-sm sm:text-base md:text-xl lg:text-xl">fellowship,and spiritual growth at Zion City of the Lord.</p>
             <Button
               text='Plan Your Visit'
               bgColor='bg-[#D92521]'

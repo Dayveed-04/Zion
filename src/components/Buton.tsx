@@ -22,7 +22,7 @@ const Button = ({
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1 text-md rounded-lg hover:opacity-90 transition ${bgColor} ${textColor} ${fontWeight} ${letterSpacing} ${fontFamily} ${borderRadius}`}
+      className={`px-2 sm:px-3 py-0.5 sm:py-1 text-sm sm:text-md  rounded-md hover:opacity-90 transition ${bgColor} ${textColor} ${fontWeight} ${letterSpacing} ${fontFamily} ${borderRadius}`}
     >
       {text}
     </button>

@@ -7,19 +7,19 @@ import AccountCard from '../components/AccountCard';
 const Giving = () => {
   return (
     <div className="min-h-screen bg-white ">
-      <section className="max-w-4xl mx-auto px-4 py-12 text-center mb-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="max-w-4xl mx-auto px-4 py-12 max-md:py-8 text-center mb-16 max-md:mb-10">
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
           Tithes And Offering
         </h1>
-        <p className="text-gray-600 mb-2">
+        <p className="text-gray-600 mb-2 max-md:text-sm">
           Honor the Lord with your wealth and with the first fruits of all your produce
         </p>
         <p className="text-[#DB241E] font-semibold">- Proverbs 3:9</p>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 mb-16">
-        <div className="border-4 border-[#DB241E] rounded-lg p-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="max-w-6xl mx-auto px-4 pb-32 max-md:pb-16">
+        <div className="border-4 border-[#DB241E] rounded-lg p-8 max-md:p-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-md:gap-6">
             <InfoCard
               iconUrl={LoveIcon}
               title="Worship & Gratitude"
@@ -40,7 +40,7 @@ const Giving = () => {
       </section>
 
       <section className="max-w-6xl mx-auto px-4 pb-32 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-40 max-md:mb-20">
           <AccountCard
             title="Tithes and Offering"
             accountNo="0000000000"

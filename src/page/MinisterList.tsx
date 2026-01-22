@@ -10,22 +10,23 @@ const navigate = useNavigate();
     <div className="min-h-screen bg-white">
 
       <section className="max-w-6xl mx-auto px-4 py-12 text-center mb-16">
-        <div className="mb-4  text-black self-start cursor-pointer ">
+        <div className="mb-4  text-black self-start cursor-pointer "
+         onClick={()=> navigate('/ministers')}>
            <img
             src={arrow}
             alt="Search"
-            width={15}
-            height={15}
-            onClick={()=> navigate('/ministers')}
+            width={20}
+            height={20}
+           
            />
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-900">
           Our Ministers
         </h1>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 pb-32">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="max-w-6xl mx-auto px-4 pb-16 md:pb-32">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           {allMinistersData.map((minister) => (
             <div key={minister.id} className="flex flex-col items-center">
               <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-[#DB241E] mb-3">
