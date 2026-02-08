@@ -16,202 +16,207 @@ export const eventsData: Event[] = [
     id: 1,
     title: "DOZ Weekly Prayer",
     category: "weekly",
-    tagLabel: "regular",
-    tagColor: "bg-purple-500",
-    date: "Every Tuesday/Wed",
-    time: "11:30 PM",
-    description: "Join us for weekly prayer and spiritual renewal every Tuesday and Wednesday"
+    tagLabel: "Regular",
+    tagColor: "bg-[#B590EC]",
+    date: "2nd Friday of Every Month",
+    time: "Virtual",
+    description: "Monthly online Vigil-Virtual service"
   },
+ 
   {
     id: 2,
-    title: "DOZ Vigil (Divinity)",
-    category: "quarterly",
-    tagLabel: "Quarterly",
-    tagColor: "bg-purple-500",
-    date: "Last Friday of the Month",
-    time: "",
-    description: "Monthly holy ghost vigil service"
+    title: "DOZ Vigil (Online)",
+    category: "weekly",
+    tagLabel: "Regular",
+    tagColor: "bg-[#B590EC]",
+    date: "2nd Friday of Every Month",
+    time: "virtual",
+    description: "Monthly online Vigil-Virtual service"
   },
-  {
+   {
     id: 3,
     title: "Praying Mothers",
     category: "weekly",
-    tagLabel: "regular",
-    tagColor: "bg-purple-500",
-    date: "3rd Saturday of the Month",
+    tagLabel: "Regular",
+    tagColor: "bg-[#B590EC]",
+    date: "3rd Sunday of the Month",
     time: "",
-    description: "Supporting Mothers in fervent prayers and supplication"
+    description: "A special gathering of mothers to pray together"
   },
+
   {
     id: 4,
     title: "Woman Thou Art Loose",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-blue-500",
-    date: "March 7th (Registration Jan. 2025)",
+    category: "quarterly",
+    tagLabel: "Quarterly",
+    tagColor: "bg-[#57B3E1]",
+    date: "March 19th & September 9th,2026",
     time: "",
-    description: "Empowerment event for women and girls to be renewed"
+    description: "Twice a year empowerment program for women"
   },
-  {
+    {
     id: 5,
     title: "Mountain Prayer Retreat",
     category: "quarterly",
     tagLabel: "Quarterly",
-    tagColor: "bg-blue-500",
-    date: "Jan 5-11 & November 15-21, 2026",
+    tagColor: "bg-[#57B3E1]",
+    date: "April 9-11 & November 12-14, 2026",
     time: "",
-    description: "Intensive prayer mountain retreat for spiritual growth"
+    description: "Two intensive prayer retreats held twice yearly"
   },
+  
   {
     id: 6,
     title: "Your Spouse Your Best Friend",
-    category: "quarterly",
-    tagLabel: "Quarterly",
-    tagColor: "bg-green-500",
-    date: "Quarterly",
-    time: "7:00 PM - 9:00 PM (Sunday Evening)",
-    description: "Marriage enrichment program for couples"
+    category: "annual",
+    tagLabel: "Annual",
+    tagColor: "bg-[#64E359]",
+    date: "February 14th, 2026",
+    time: "4:00PM-7:00PM Studio Vic/Island",
+    description: "A special Valentine's Day program for married couples"
   },
-  {
-    id: 7,
+   {
+    id: 8,
     title: "Pastors Appreciation",
     category: "annual",
     tagLabel: "Annual",
-    tagColor: "bg-green-500",
-    date: "October",
+    tagColor: "bg-[#64E359]",
+    date: "Easter Sunday,2026",
     time: "",
-    description: "Honoring our pastors and their families"
+    description: "Honoring our pastors and church leaders"
   },
-  {
-    id: 8,
+   {
+    id: 9,
     title: "Mother's Day",
     category: "annual",
     tagLabel: "Annual",
-    tagColor: "bg-green-500",
-    date: "May (2nd Sunday)",
+    tagColor: "bg-[#64E359]",
+    date: "March,2026",
     time: "",
-    description: "Celebrating mothers and their godly devotion"
-  },
-  {
-    id: 9,
-    title: "Daughter of Zion Week",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-green-500",
-    date: "",
-    time: "",
-    description: "Yearly ladies retreat and empowerment"
+    description: "celebrating mothers with a special picnic"
   },
   {
     id: 10,
+    title: "Daughter Of Zion Week",
+    category: "annual",
+    tagLabel: "Annual",
+    tagColor: "bg-[#64E359]",
+    date: "August 28-30,2026",
+    time: "",
+    description: "Three-day celebration and empowerment"
+  },
+  { 
+    id: 11,
     title: "DOZ Camping",
     category: "annual",
     tagLabel: "Annual",
-    tagColor: "bg-green-500",
-    date: "1st Saturday in August",
-    time: "Aug. 2nd, 2025",
-    description: "Annual end of the glorious camp fellowship and fun retreat"
-  },
-  {
-    id: 11,
-    title: "Appreciating DOZ",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-green-500",
-    date: "November (last)",
-    time: "",
-    description: "Appreciation and seed sowing day"
+    tagColor: "bg-[#64E359]",
+    date: "2026",
+    time: "Friday-Mainland, Saturday-Island",
+    description: "Weekend camping experience with fellowship and worship"
   },
   {
     id: 12,
-    title: "New Year Thanksgiving",
+    title: "Appreciating DOZ",
     category: "annual",
     tagLabel: "Annual",
-    tagColor: "bg-red-500",
-    date: "",
+    tagColor: "bg-[#64E359]",
+    date: "January 4th,2026",
     time: "",
-    description: "Thanksgiving service and praise service"
+    description: "Year-end appreciation and sharing of gifts"
   },
+
   {
     id: 13,
-    title: "Love and Gifting Sunday",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-red-500",
-    date: "February, 9th, 2025",
-    time: "",
-    description: "Special day for fellowship and caring for one another"
+    title: "Doz Weekly Prayer",
+    category: "children",
+    tagLabel: "Children",
+    tagColor: "bg-[#E16B68]",
+    date: "Every Tuesday Night",
+    time: "11:30PM-12:30AM",
+    description: ""
   },
   {
     id: 14,
-    title: "Children's Prayer and Fasting",
+    title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
-    date: "",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
     time: "",
-    description: "Prayer and fasting training for children"
+    description: "Children honoring and celebrating their mothers"
   },
   {
     id: 15,
     title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
+    tagColor: "bg-[#E16B68]",
     date: "May (2nd Sunday)",
     time: "",
     description: "Children honoring and celebrating their mothers"
   },
   {
     id: 16,
-    title: "Easter Sunday (Children)",
+    title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
-    date: "April 20th, 2025",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
     time: "",
-    description: "Worship, fun, candy, and fellowship with children! Children learn about Jesus Christ"
+    description: "Children honoring and celebrating their mothers"
   },
   {
     id: 17,
-    title: "Father's Day (Children)",
+    title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
-    date: "June 15th, 2025",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
     time: "",
-    description: "Children honoring their fathers"
+    description: "Children honoring and celebrating their mothers"
   },
   {
     id: 18,
-    title: "Teachers and Children's Retreat",
+    title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
-    date: "August (TBD)",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
     time: "",
-    description: "Retreat day for spiritual development and fun activities"
+    description: "Children honoring and celebrating their mothers"
   },
   {
     id: 19,
-    title: "Children's Feasting and Prayer",
+    title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
-    date: "September 14th, 2025",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
     time: "",
-    description: "Special teaching and lessons for kids on communion"
+    description: "Children honoring and celebrating their mothers"
   },
   {
     id: 20,
-    title: "Children's Christmas Party",
+    title: "Mother's Day (Children)",
     category: "children",
     tagLabel: "Children",
-    tagColor: "bg-red-500",
-    date: "",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
     time: "",
-    description: "Year end celebration with our little ones"
-  }
+    description: "Children honoring and celebrating their mothers"
+  },
+  {
+    id: 21,
+    title: "Mother's Day (Children)",
+    category: "children",
+    tagLabel: "Children",
+    tagColor: "bg-[#E16B68]",
+    date: "May (2nd Sunday)",
+    time: "",
+    description: "Children honoring and celebrating their mothers"
+  },
+   
 ];
 
 export const filterCategories = [
