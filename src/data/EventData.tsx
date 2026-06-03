@@ -1,11 +1,16 @@
-export type EventCategory = 'all' | 'weekly' | 'quarterly' | 'annual' | 'children';
+export type EventCategory =
+  | "all"
+  | "weekly"
+  | "quarterly"
+  | "annual"
+  | "children";
 
 export interface Event {
   id: number;
   title: string;
   category: EventCategory;
   tagLabel: string;
-  tagColor: string; 
+  tagColor: string;
   date: string;
   time: string;
   description: string;
@@ -14,215 +19,114 @@ export interface Event {
 export const eventsData: Event[] = [
   {
     id: 1,
-    title: "DOZ Weekly Prayer",
+    title: "Command the Week",
     category: "weekly",
     tagLabel: "Regular",
     tagColor: "bg-[#B590EC]",
-    date: "2nd Friday of Every Month",
-    time: "Virtual",
-    description: "Monthly online Vigil-Virtual service"
+    date: "Every Monday ",
+    time: "6:00am-6:30am",
+    description: "",
   },
- 
+
   {
     id: 2,
-    title: "DOZ Vigil (Online)",
+    title: "General Church Vigil",
     category: "weekly",
     tagLabel: "Regular",
     tagColor: "bg-[#B590EC]",
-    date: "2nd Friday of Every Month",
-    time: "virtual",
-    description: "Monthly online Vigil-Virtual service"
+    date: "Last Friday of Every Month",
+    time: "11pm-4am",
+    description: "",
   },
-   {
+  {
     id: 3,
-    title: "Praying Mothers",
+    title: "Evangelism and Hour of Prevailing Prayers",
     category: "weekly",
     tagLabel: "Regular",
     tagColor: "bg-[#B590EC]",
-    date: "3rd Sunday of the Month",
-    time: "",
-    description: "A special gathering of mothers to pray together"
+    date: "Every 2nd Saturday",
+    time: "8am-11am",
+    description: "",
   },
 
   {
     id: 4,
-    title: "Woman Thou Art Loose",
-    category: "quarterly",
-    tagLabel: "Quarterly",
-    tagColor: "bg-[#57B3E1]",
-    date: "March 19th & September 9th,2026",
-    time: "",
-    description: "Twice a year empowerment program for women"
+    title: "Sunday Service",
+    category: "weekly",
+    tagLabel: "Regular",
+    tagColor: "bg-[#B590EC]",
+    date: "Every Sunday",
+    time: "8am-10:30am",
+    description: "",
   },
-    {
+
+  {
     id: 5,
-    title: "Mountain Prayer Retreat",
-    category: "quarterly",
-    tagLabel: "Quarterly",
-    tagColor: "bg-[#57B3E1]",
-    date: "April 9-11 & November 12-14, 2026",
+    title: "Feast of The Trumpet",
+    category: "annual",
+    tagLabel: "Annual",
+    tagColor: "bg-[#64E359]",
+    date: "October 1st,2026",
     time: "",
-    description: "Two intensive prayer retreats held twice yearly"
+    description: "",
   },
-  
   {
     id: 6,
-    title: "Your Spouse Your Best Friend",
+    title: "Feast of the Tabernacle",
     category: "annual",
     tagLabel: "Annual",
     tagColor: "bg-[#64E359]",
-    date: "February 14th, 2026",
-    time: "4:00PM-7:00PM Studio Vic/Island",
-    description: "A special Valentine's Day program for married couples"
+    date: "October 25th,2026",
+    time: "9am-12:30pm",
+    description: "",
   },
-   {
+  {
+    id: 7,
+    title: "Cross-Over Service",
+    category: "annual",
+    tagLabel: "Annual",
+    tagColor: "bg-[#64E359]",
+    date: "December 31st,2026",
+    time: "10pm-12:30am",
+    description: "",
+  },
+  {
     id: 8,
-    title: "Pastors Appreciation",
+    title: "Family Sunday",
     category: "annual",
     tagLabel: "Annual",
     tagColor: "bg-[#64E359]",
-    date: "Easter Sunday,2026",
+    date: "Novemeber 2026",
     time: "",
-    description: "Honoring our pastors and church leaders"
+    description: "",
   },
-   {
+
+  {
     id: 9,
-    title: "Mother's Day",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-[#64E359]",
-    date: "March,2026",
+    title: "Children Retreat",
+    category: "children",
+    tagLabel: "Children",
+    tagColor: "bg-[#E16B68]",
+    date: "August 2026",
     time: "",
-    description: "celebrating mothers with a special picnic"
+    description: "",
   },
   {
     id: 10,
-    title: "Daughter Of Zion Week",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-[#64E359]",
-    date: "August 28-30,2026",
-    time: "",
-    description: "Three-day celebration and empowerment"
-  },
-  { 
-    id: 11,
-    title: "DOZ Camping",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-[#64E359]",
-    date: "2026",
-    time: "Friday-Mainland, Saturday-Island",
-    description: "Weekend camping experience with fellowship and worship"
-  },
-  {
-    id: 12,
-    title: "Appreciating DOZ",
-    category: "annual",
-    tagLabel: "Annual",
-    tagColor: "bg-[#64E359]",
-    date: "January 4th,2026",
-    time: "",
-    description: "Year-end appreciation and sharing of gifts"
-  },
-
-  {
-    id: 13,
-    title: "Doz Weekly Prayer",
+    title: "Childrens Christmas Party",
     category: "children",
     tagLabel: "Children",
     tagColor: "bg-[#E16B68]",
-    date: "Every Tuesday Night",
-    time: "11:30PM-12:30AM",
-    description: ""
-  },
-  {
-    id: 14,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
+    date: "December 13th, 2026",
     time: "",
-    description: "Children honoring and celebrating their mothers"
+    description: "",
   },
-  {
-    id: 15,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-  {
-    id: 16,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-  {
-    id: 17,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-  {
-    id: 18,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-  {
-    id: 19,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-  {
-    id: 20,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-  {
-    id: 21,
-    title: "Mother's Day (Children)",
-    category: "children",
-    tagLabel: "Children",
-    tagColor: "bg-[#E16B68]",
-    date: "May (2nd Sunday)",
-    time: "",
-    description: "Children honoring and celebrating their mothers"
-  },
-   
 ];
 
 export const filterCategories = [
-  { id: 'all', label: 'All Events', color: 'bg-[#DB241E]' },
-  { id: 'weekly', label: 'Weekly/Monthly', color: 'bg-white' },
-  { id: 'quarterly', label: 'Quarterly', color: 'bg-white' },
-  { id: 'annual', label: 'Annual Events', color: 'bg-white' },
-  { id: 'children', label: 'Children Event', color: 'bg-white' }
+  { id: "all", label: "All Events", color: "bg-[#DB241E]" },
+  { id: "weekly", label: "Weekly/Monthly", color: "bg-white" },
+  // { id: "quarterly", label: "Quarterly", color: "bg-white" },
+  { id: "annual", label: "Annual Events", color: "bg-white" },
+  { id: "children", label: "Children Event", color: "bg-white" },
 ];

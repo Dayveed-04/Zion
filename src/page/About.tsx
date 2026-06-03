@@ -22,9 +22,9 @@ const AboutUs = () => {
 
       <section className="bg-red-100 py-12">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-6">Our Journey</h2>
-          <div className="space-y-4 text-gray-700 leading-relaxed">
-            <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+          <h2 className="text-xl md:text-3xl font-bold  mb-6">Our Journey</h2>
+          <div className="space-y-4  leading-relaxed">
+            <p className="text-sm md:text-base leading-relaxed">
                Zion the City of the Lord Ministries Inc. was founded by our late father,Apostle Alexander Oyewole Bangbola, and commenced service <br/>
                 on May 2, 1999 at his living room at 33A Cooper Road, Ikoyi Lagos.
            </p>
