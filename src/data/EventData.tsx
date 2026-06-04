@@ -121,12 +121,22 @@ export const eventsData: Event[] = [
     time: "",
     description: "",
   },
+  {
+    id: 11,
+    title: "Sisters General Meeting",
+    category: "quarterly",
+    tagLabel: "Quarterly",
+    tagColor: "bg-[#219FD999]",
+    date: "2nd Sunday of Every Month",
+    time: "",
+    description: "",
+  },
 ];
 
 export const filterCategories = [
   { id: "all", label: "All Events", color: "bg-[#DB241E]" },
   { id: "weekly", label: "Weekly/Monthly", color: "bg-white" },
-  // { id: "quarterly", label: "Quarterly", color: "bg-white" },
   { id: "annual", label: "Annual Events", color: "bg-white" },
+  { id: "quarterly", label: "Women Event", color: "bg-white" },
   { id: "children", label: "Children Event", color: "bg-white" },
 ];
