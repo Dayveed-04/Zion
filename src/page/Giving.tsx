@@ -1,18 +1,19 @@
-import InfoCard from '../components/InfoCard';;
-import LoveIcon from '../assets/images/LoveIcon.svg';
-import EventsIcon from '../assets/images/EventIcon.svg';
-import CommunityIcon from '../assets/images/CommunityIcon.svg';
-import AccountCard from '../components/AccountCard';
+import InfoCard from "../components/InfoCard";
+import LoveIcon from "../assets/images/LoveIcon.svg";
+import EventsIcon from "../assets/images/EventIcon.svg";
+import CommunityIcon from "../assets/images/CommunityIcon.svg";
+import AccountCard from "../components/AccountCard";
 
 const Giving = () => {
   return (
     <div className="min-h-screen bg-white ">
-      <section className="max-w-4xl mx-auto px-4 py-12 max-md:py-8 text-center mb-16 max-md:mb-10">
+      <section className="max-w-4xl mx-auto px-4 py-12 max-md:py-8 text-center mb-16 max-md:mb-10 mt-8">
         <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
           Tithes And Offering
         </h1>
         <p className="text-gray-600 mb-2 max-md:text-sm">
-          Honor the Lord with your wealth and with the first fruits of all your produce
+          Honor the Lord with your wealth and with the first fruits of all your
+          produce
         </p>
         <p className="text-[#DB241E] font-semibold">- Proverbs 3:9</p>
       </section>
