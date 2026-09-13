@@ -163,8 +163,8 @@ const heroImages = [
   { src: HomeHero, alt: "HomeHeroImage" },
   { src: CarouselImage1, alt: "CarouselImage1" },
   { src: CarouselImage2, alt: "CarouselImage2" },
+  { src: CarouselImage3, alt: "CarouselImage3" },
   { src: CarouselImage4, alt: "CarouselImage4" },
-  { src: CarouselImage5, alt: "CarouselImage5" },
   { src: CarouselImage5, alt: "CarouselImage5" },
 ];
 
