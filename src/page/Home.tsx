@@ -160,11 +160,12 @@ import Event from "../components/Event";
 import { useNavigate } from "react-router-dom";
 
 const heroImages = [
-  { src: HomeHero, alt: "Image1" },
-  { src: CarouselImage2, alt: "Image2" },
-  { src: CarouselImage3, alt: "Image3" },
-  { src: CarouselImage4, alt: "Image4" },
-  { src: CarouselImage5, alt: "Image5" },
+  { src: HomeHero, alt: "HomeHeroImage" },
+  { src: CarouselImage1, alt: "CarouselImage1" },
+  { src: CarouselImage2, alt: "CarouselImage2" },
+  { src: CarouselImage4, alt: "CarouselImage4" },
+  { src: CarouselImage5, alt: "CarouselImage5" },
+  { src: CarouselImage5, alt: "CarouselImage5" },
 ];
 
 const Home = () => {
